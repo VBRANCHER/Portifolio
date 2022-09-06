@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Navbar, Container } from "react-bootstrap";
-inport logo from '../assets'
+import { AiOutlineWhatsApp } from 'react-icons/fa';
+import { AiFillLinkedin } from 'react-icons/fa';
+import { AiFillGithub } from 'react-icons/fa';
 
 export const NavBar = () => { 
   const [activeLink, setActiveLink] = useState('home');
@@ -37,9 +39,9 @@ const onUpadteActiveLink = (value) => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href=""><img src={} alt="" /></a>
-              <a href=""><img src={} alt="" /></a>
-              <a href=""><img src={} alt="" /></a>
+              <a href=""><img src={AiOutlineWhatsApp} alt="" /></a>
+              <a href=""><img src={AiFillLinkedin} alt="" /></a>
+              <a href=""><img src={AiFillGithub} alt="" /></a>
             </div>
             <button className="vvd" onClick={() => console.log('connect')}><span>Contate-me</span></button>
           </span>

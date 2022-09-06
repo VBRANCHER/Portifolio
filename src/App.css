@@ -1,3 +1,9 @@
+/* Fontes Customizadas */
+@font-face {
+  font-family: Centra;
+  src: url(react-icons/fa);
+}
+
 .App {
   text-align: center;
 }
