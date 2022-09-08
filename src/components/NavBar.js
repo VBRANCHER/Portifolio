@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
-import { Navbar, Container } from "react-bootstrap";
-import { AiOutlineWhatsApp } from 'react-icons/fa';
-import { AiFillLinkedin } from 'react-icons/fa';
-import { AiFillGithub } from 'react-icons/fa';
+import { Navbar, Container, Nav } from "react-bootstrap";
+import { ImWhatsapp } from 'react-icons/im';
+import { ImLinkedin } from 'react-icons/im';
+import { ImGithub } from 'react-icons/im';
+
 
 export const NavBar = () => { 
   const [activeLink, setActiveLink] = useState('home');
-  const [scolled, seScrolled] = useState(false);
+  const [scrolled, seScrolled] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -39,9 +40,9 @@ const onUpadteActiveLink = (value) => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href=""><img src={AiOutlineWhatsApp} alt="" /></a>
-              <a href=""><img src={AiFillLinkedin} alt="" /></a>
-              <a href=""><img src={AiFillGithub} alt="" /></a>
+              <a href=""><img src={ImWhatsapp} alt="" /></a>
+              <a href=""><img src={ImLinkedin} alt="" /></a>
+              <a href=""><img src={ImGithub} alt="" /></a>
             </div>
             <button className="vvd" onClick={() => console.log('connect')}><span>Contate-me</span></button>
           </span>
