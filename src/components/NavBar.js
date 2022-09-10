@@ -9,6 +9,7 @@ export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, seScrolled] = useState(false);
 
+
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50){
@@ -40,9 +41,9 @@ const onUpadteActiveLink = (value) => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href=""><img src={ImWhatsapp} alt="" /></a>
-              <a href=""><img src={ImLinkedin} alt="" /></a>
-              <a href=""><img src={ImGithub} alt="" /></a>
+              <a href=""><ImWhatsapp /></a>
+              <a href=""><ImLinkedin /></a>
+              <a href=""><ImGithub /></a>
             </div>
             <button className="vvd" onClick={() => console.log('connect')}><span>Contate-me</span></button>
           </span>
